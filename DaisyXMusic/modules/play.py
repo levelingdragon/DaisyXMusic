@@ -451,7 +451,7 @@ async def m_cb(b, cb):
             await cb.answer("Chat is not connected!", show_alert=True)
 
 
-@Client.on_message(command("play") & other_filters)
+@Client.on_message(command("ytt") & other_filters)
 async def play(_, message: Message):
     global que
     global useer
@@ -508,7 +508,7 @@ async def play(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
+            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /ytt command for first time or add {user.first_name} manually</i>"
         )
         return
     text_links=None
